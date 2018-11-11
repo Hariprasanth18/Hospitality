@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:crimson;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color:antiquewhite;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color:black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.btn {
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.success {background-color: #4CAF50;} 
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} 
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} 
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;}  
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;}  
+.default:hover {background: #ddd;}
+
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer {
+  overflow: hidden;
+  background-color:#2196F3;
+  padding: 5px 5px;
+}
+
+.footer a {
+  float: left;
+  color:antiquewhite;
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.footer a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color:black;
+}
+
+.footer-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .footer a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+ * {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#ddd;
+}
+
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 8px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background:#2196F3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background:#ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer1 {
+  overflow: hidden;
+  background-color:grey;
+  padding: 5px 5px;
+}
+
+.footer1-right {
+  float: right;
+}
+
+
+.footer1 a {
+  float: left;
+  color:black;
+  text-align: justify;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.footer1 a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer1 a:hover {
+  color:white;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo"><img src="D:\VisualCodeWorkSpace\photos in html\logo1.png" width="200" height="50"></a>
+
+      <div class="header-center">
+            <a href="#home">Movies</a>
+            <a href="#contact">Events</a>
+            <a href="#about">Plays</a>
+            <a href="#about">Sports</a>
+            <a href="#about">Monuments</a>
+            <a href="#about">Drama.</a>
+         </div>
+        <div class="header-right">
+             <a href="#about">Location</a>
+             <a href="#about">Offers</a>
+             <a href="#about">Giftcard</a>      
+            <img src="D:\VisualCodeWorkSpace\photos in html\f4.png" width="25" height="25">
+             <button class="btn info" >log in</button>
+            <img src="D:\VisualCodeWorkSpace\photos in html\f5.png" width="25" height="25">     
+             <button class="btn success">sign up</button>
+         </div>
+</div>
+
+  <div class="topnav">
+       <div class="container">
+             <div class="search-container">
+                <form action="/action_page.php">
+                     <input type="text" placeholder="Search for Movies,events,plays.." name="search" size="115">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                 </form>
+               </div>
+        </div>
+   </div>
+
+
+
+
+
+
+<div class="container-fliud">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="D:\VisualCodeWorkSpace\photos in html\a1.jpg"  style="width:100%;"   style="height:30%;">
+      </div>
+
+      <div class="item">
+        <img src="D:\VisualCodeWorkSpace\photos in html\a4.jpg"  style="width:100%;" style="height:30%;">
+      </div>
+    
+      <div class="item">
+        <img src="D:\VisualCodeWorkSpace\photos in html\a5.jpg"  style="width:100%;" style="height:30%;">
+      </div>
+
+      <div class="item">
+        <img src="D:\VisualCodeWorkSpace\photos in html\a6.jpg"  style="width:100%;" style="height:30%;">
+      </div>
+    
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+<hr>
+      <h2>Movies</h2>
+<hr>
+    <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                   <img src="D:\VisualCodeWorkSpace\photos in html\ratasaan-.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">95%   Ratchasaan </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">56k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U|Drama|Tamil</p>
+                      </div></a>
+                </div>
+             <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\vada-chennai.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">93%   Vada chennai </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">60k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U/A|Drama|Tamil</p>
+                   </div>
+                      </a>
+                  </div>           
+               <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\96.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                  <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">90%     96 </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">90k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U|Romance|Tamil</p>
+  
+                      </div>
+                  </a>
+               </div>
+                   <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\sarkar.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">85%   Sarkar </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">100k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U|Action|Tamil</p>
+                    </div>
+                  </a>
+                   </div>
+     </div>
+       <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\h1.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">83%   Thugs & Hindustan </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">76k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U|Drama|Hindi</p>
+                     </div>
+                  </a>
+                </div>
+             <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\h2.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">80%   Andhadhun </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">72k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U|Romance|Hindi</p>
+                       </div>
+                  </a>
+                </div>
+               <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\h3.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">86%   Badhaai ho </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">55k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">2k   U|Drama|Hindi</p>
+  
+                      </div>
+                  </a>
+               </div>
+                   <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\h4.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">90%   Baazaa </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">83k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U|Action|Hindi</p>
+  
+                      </div>
+                  </a>   
+                </div>
+       </div>
+        <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\venom.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">83%   venom </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">112k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U/A|Action|English</p>
+  
+                      </div>
+                  </a>
+                </div>
+             <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\e2.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">92%   Goosebumps2 </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">100k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U/A|Action|English</p>
+  
+                      </div>
+                  </a>
+                </div>
+               <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\e3.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">86%  JE   </h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">95k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U/A|Action|English</p>
+  
+                      </div>
+                  </a>
+               </div>
+                   <div class="col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\e4.jpg" alt="..." width="200" height="300">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">90%    Jamanji</h4>
+                      <p><img src="D:\VisualCodeWorkSpace\photos in html\f8.png" width="20" height="20">101k <img src="D:\VisualCodeWorkSpace\photos in html\f9.png" width="20" height="20">1k   U/A|Action|English</p>
+  
+                      </div>
+                  </a>
+                   </div>
+          </div>
+    </div>
+ <div class="container">          
+    <hr>  
+    <h2>Events</h2>
+    <hr>
+       <div class="row">
+                <div class="col-md-4">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\k1.jpg" alt="..." width="250" height="350">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">65%     Imaginarium </h4>
+                      <p><h3>On DEC 12</h3><h4>onwards</h4>  <h5> venue:Race course,cbe. </h5>    Kid show|Fun|Magic </p>
+  
+                      </div>
+                  </a>
+                </div>
+                  <div class="row">
+                <div class="col-md-4">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\k2.jpg" alt="..." width="250" height="350">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">95%    Sunburn Fest 2018 </h4>
+                     <p><h3>On DEC 29,30</h3><h4>onwards</h4>    <h5> venue:gulf Beach,goa.  </h5>             Party|Fun|Music</p>
+  
+                      </div>
+                  </a>
+                </div>
+             <div class="row">
+                <div class="col-md-4">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\k3.jpg" alt="..." width="250" height="350">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">86%   November Fest </h4>
+                      <p><h3>On DEC 15</h3><h4>onwards</h4> <h5> venue:The Hindu Office,chennai.  </h5>   Food|Fun|Music</p>
+  
+                      </div>
+                  </a>
+                </div>
+       </div>
+   </div> 
+   <div class="container">  
+  <hr>
+   <h2>Sports</h2>
+   <hr>
+       <div class="row">
+                <div class="col-md-4">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\i1.jpg" alt="..." width="250" height="350">
+                    <div class="caption">
+                   <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">93%   ISL 2018 </h4>
+                      <p><h3>On NOV 3</h3><h4>onwards</h4> <h5>venue:Nehru stadium,chennai.</h5>  Timing:IST +18:00  </p>
+  
+                      </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\i2.jpg" alt="..." width="250" height="350">
+                    <div class="caption">
+                     <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">85%   Green Marathon  </h4>
+                      <p><h3>On NOV 25</h3><h4>onwards</h4>  <h5> venue:White house road,kochi. </h5>    Timing:IST +6:00  </p>
+  
+                      </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="thumbnail">
+                    <img src="D:\VisualCodeWorkSpace\photos in html\i3.jpg" alt="..." width="250" height="350">
+                    <div class="caption">
+                      <h4><img src="D:\VisualCodeWorkSpace\photos in html\f7.png" width="20" height="20">95%   Grand Pix F1 Dubai 2018 </h4>
+                      <p><h3>On NOV 9 </h3> <h4>onwards</h4> <h5>venue: YAS Marina circuit,Dubai.  </h5>            Timing:IST +23:00  </p>
+                        </div>
+                  </a>
+                </div>
+        </div>
+  </div>      
+<div class="container-fliud">  
+<hr><hr>
+    <div class="footer">
+
+              <div class="footer-left">
+                 <a href="#">About us|</a>
+                 <a href="#">Partner with us|</a>
+                 <a href="#">Terms and Condition|</a>
+                 <a href="#"> Policy|</a>
+                 <a href="#">Blog|</a>
+                 <a href="#">Customer sevices|</a>
+               </div>
+           <div class="footer-right">
+              <img src="D:\VisualCodeWorkSpace\photos in html\f10.png" width="25" height="25">
+              <img src="D:\VisualCodeWorkSpace\photos in html\f12.png" width="25" height="25">
+              <img src="D:\VisualCodeWorkSpace\photos in html\f13.png" width="25" height="25">|
+              <img src="D:\VisualCodeWorkSpace\photos in html\f11.png" width="25" height="25">
+              <img src="D:\VisualCodeWorkSpace\photos in html\f14.png" width="25" height="25">
+              <img src="D:\VisualCodeWorkSpace\photos in html\f15.png" width="25" height="25">
+              <img src="D:\VisualCodeWorkSpace\photos in html\f16.png" width="25" height="25">
+       
+             </div>     
+       </div>     
+  </div>   
+    <div class="footer1">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h4>BEST LANGUAGE GENRE MOVIES </h4>
+                           <p>  Hindi Comedy Movies | Hindi Action Movies | English Animated Movies | English Fantasy Movies |
+                                English Comedy Movies | English Action Movies | Tamil Action Movies |
+                                Tamil Comedy Movies |  Telugu Action Movies | Gujrati Comedy Movies |
+                                Marathi Drama Movies |  Marathi Comedy Movies | Hindi Animated Movies</p>
+                      </div>
+
+                   <div class="col-md-3">
+                      <h4>POPULAR MOVIES BY LANGUAGE </h4>
+                      <p> Popular Hindi Movies |  Popular English Movies | 
+                          Popular Marathi Movies |  Popular Bengali Movies |  
+                          Popular Tamil Movies |  Popular Telugu Movies | 
+                          Popular Malayalam Movies |  Popular Bhojpuri Movies | 
+                          Popular Kannada Movies |  Popular Punjabi Movies | 
+                          Popular Gujrati Movies |  Popular Sindhi Movies
+                          </p>
+                     </div>
+
+                   <div class="col-md-3">
+                      <h4>MOVIES BY GENRE</h4>
+                       <p> 
+                          Best Action Movies |  Best Romantic Movies | 
+                          Best Comedy Movies |  Best Adult Movies | 
+                          Best Adventure Movies |  Best Biography Movies | 
+                          Best Classic Movies |  Best Crime Movies | 
+                          Best Drama Movies |  Best Family Movies | 
+                          Best Fantasy Movies |  Best History Movies | 
+                          Best Musical Movies |  Best Mystery Movies | 
+                          Best Sci-Fi Movies |  Best Suspense Movies | 
+                          Best Thriller Movies |  Best Western Movies
+                          </p>
+                     </div>
+
+                     <div class="col-md-3">             
+                        <h4>MOVIE REVIEWS</h4>
+                        <p>
+                            Trending Articles | Latest News on Movies, Events, Plays & Sports | Rajeev Masand Movie Reviews | Anupama Chopra Movie Review |  Film Reviews | Guest Blogging
+                            </p>
+                       </div>
+
+             </div>
+
+             <div class="row">
+                  <div class="col-md-3">
+                     <h4>BOOKMYSHOW APP</h4>
+                      <p>
+                        BMS Ticketing iOS App |  BMS Ticketing Android App |
+                        
+                       </p>
+                   </div>
+
+               <div class="col-md-3">
+                    <h4>BOOKMYSHOW NEWS</h4>
+                    <p> Entertainment Blog |  Press Release |
+                        Press Coverage | Current Openings |
+                        Contact Us |  About Us</p>
+                 </div>
+    
+                <div class="col-md-3">
+                   <h4>EXCLUSIVES</h4>
+                   <p>
+                      BookASmile |  Corporate Vouchers |
+                      Gift Cards | Filmy Pass NEW|
+                      My Coupons |  Box Office Collection NEW</p>
+                 </div>
+    
+              <div class="col-md-3">
+                  <h4> HELP</h4>
+                  <p>
+                    Sitemap |  FAQs |  Terms and Conditions |
+                    Privacy Policy | Report Content</p>
+               </div>      
+           </div>   
+  </div>          
+</body>
+</html>
